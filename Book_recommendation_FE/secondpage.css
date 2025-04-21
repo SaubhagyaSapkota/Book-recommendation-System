@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    list-style: none;
+    /* border inside element's dimension */
+  }
+
+  .search_results{
+    min-height : 400px;
+    background-color: #0f1111;
+
+  }
+
+  .text{
+    height :40px;
+    color: white;
+    background-color: #0f1111;
+    margin-left: 70px;
+    padding-top: 10px;
+
+  }
+  .book-details{
+    min-height: 320px;
+    
+    display: flex;
+    margin-top: 15px;
+  }
+
+  .bname_img{
+    height: 300px;
+    width:180px;
+    position: absolute;
+    background-color: grey;
+    margin-top: 10px;
+    margin-left:70px;
+  }
+  .bname_details{
+    
+    margin-left: 270px;
+    margin-right:20px ;
+    width : 100%
+
+  }
+
+  .bname.head{
+    font-size: 2.3rem;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left:10px;
+    margin-bottom:15px;
+    height: 40px;
+  }
+
+  .attributes{
+    color: white;
+
+    width : 100%;
+    height: 280x;
+    font-size: 14px;
+  }
+
+  .bname.y{
+    color: orange;
+    white-space: nowrap ;
+  }
+
+  .bname.head{
+    color: white;
+  }
+
+  .further{
+    margin-left:70px;
+    width: 100%;
+  }
+
+  .foryou{
+    width:100%;
+  }
+
+  a{
+    text-decoration: none;
+    color :white;
+  }
+
+  

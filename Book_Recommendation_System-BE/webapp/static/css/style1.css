@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    /* border inside element's dimension */
+  }
+  
+  .navbar {
+    height: 100px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .nav-logo {
+    height: 50px;
+    width: 100px;
+  }
+  
+  .logo {
+    background-image: url("/static/images/book_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 100%;
+  }
+  
+  .border {
+    border: 1.5px transparent solid;
+  }
+  
+  .border:hover {
+    border: 1.5px solid white;
+  }
+  
+  /* search */
+  
+  .nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    width: 650px;
+    height: 60px;
+    border-radius: 4px;
+  }
+  
+  .nav-search:hover {
+    border: 2px solid orange;
+  }
+  
+  .search-select {
+    background-color: #f3f3f3;
+    width: 120px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+  }
+  
+  .search-form {
+    width: 100%;
+    height: 60px;
+    font-size: 1rem;
+    border: none;
+  }
+
+  .search-input-container {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+
+  .search-input {
+    flex: 1;
+    width: 90%;
+    height: 60px;
+  }
+  
+  .search-icon {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    /* horizontally */
+    align-items: center;
+    /*vertically */
+    background-color: #febd36;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+  }
+  .search-button {
+    background-color: #febd36;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .signin-signup {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+  
+  button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 60px;
+    height: 30px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+    transition: 0.4s;
+  }
+  
+  .reg {
+    color: black;
+    background-color: #febd36;
+  }
+  
+  .log {
+    color: black;
+    background-color: #febd36;
+    border: 1px solid whitesmoke;
+  }
+  
+  button:hover {
+    color: white;
+    /* width: ; */
+    box-shadow: 0 0 20px rgba(225, 164, 21, 0.6);
+    background-color: #feab36;
+  }
+  /*panel*/
+  
+  .panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .panel-opt a {
+    display: inline;
+    margin-left: 25px;
+    color: white;
+    font-weight: bold; 
+    text-decoration: none;
+  }
+  
+  .panel-opt {
+    width: 70%;
+    font-size: 0.85rem;
+  }
+  
+  .COLOR {
+    background-color: #0f1111;
+  }
+  
+      .main-sec{
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          height: 400px;
+          background-color: #f4dbf4;
+  
+      }
+      
+      .cover-img{
+         
+          color: white;
+          width : 85%;
+          height: 300px;
+          background-image: url('/static/images/openbook.jpg');
+          background-size: cover;
+          margin-bottom: 10px;
+           
+      }
+      
+      
+  .main-sec {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 500px;
+    background-color: #f4dbf4;
+  }
+  
+  .cover-img {
+    color: white;
+    width: 80%;
+    height: 480px;
+    background-image: url("/static/images/openbook.jpg");
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  
+  
+      .foryou{
+          /* background-color: ; */
+          width: 38%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color : white
+         
+          
+      }
+  
+  .foryou {
+    /* background-color: ; */
+    width: 38%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .book-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #0f1111;
+  }
+      
+      .box-content p{
+          color:#007185
+      }
+      .foryou  h2{
+          margin-top:30px;
+          height: 100px;
+        }
+  
+      .box0{
+          height: fit-content;
+          width: 200px;
+          border: #707070 1px solid;
+          color: white;
+          padding: 10px;
+          background-color: #222f3d;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+  
+      /* -- uploading images covers--*/
+      .box-img.a100{
+        width: 60%;
+        height: auto;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+            background-color: #ccc; 
+      }   
+  
+      .box-img.a1{
+          height: 200px;
+               background-image: url('/static/images/ataleof.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+  
+      .box-img.a2{
+          height: 200px;
+               background-image: url('/static/images/harry-potter_ps.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+  
+      .box-img.a3{
+          height: 200px;
+               background-image: url('/static/images/thehobbit.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+  
+      .box-img.a4{
+          height: 200px;
+               background-image: url('/static/images/therewerenone.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+  
+      .box-img.a5{
+          height: 200px;
+               background-image: url('/static/images/davinchi.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+  
+      .box-img.a6{
+          height: 200px;
+               background-image: url('/static/images/chamberofsec.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+  
+      .box-img.a7{
+          height: 200px;
+               background-image: url('/static/images/alchemist.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+      .box-img.a8{
+          height: 200px;
+               background-image: url('/static/images/prisionersofaz.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+  
+      .box-img.a9{
+          height: 200px;
+               background-image: url('/static/images/hundredyears.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+  
+      .box-img.a10{
+          height: 200px;
+               background-image: url('/static/images/tokillamocking.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+  
+      .box-img.a11{
+          height: 200px;
+               background-image: url('/static/images/warandpeace.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+  
+      .box-img.a12{
+          height: 200px;
+               background-image: url('/static/images/diaryanne.jpg'); 
+              background-size: cover;
+              background-position: center;
+              margin-bottom: 10px;
+      }
+  
+      /*--image cover section ends*/
+  
+      .bname{
+          font-weight: bold;
+              margin-bottom: 5px;
+              color:white
+          }
+      
+          .author-yr{
+              display: flex;
+              justify-content: space-between;
+              color: white;
+          }
+  
+          .author,
+          .yop {
+              font-size: 12px;
+          }
+  
+          /* footer */
+  
+      footer{
+          margin-top: 15px;
+      }
+      .foot-panel1{
+          background-color: #37475a;
+          color: white;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 0.85rem;
+      }
+
+      .foot-panel1 a {
+        color: white; 
+        font-weight: bold; 
+        text-decoration: none;
+    }
+  
+      
+  .footpanel3{
+      background-color: #222f3d;
+      border-top: 0.5px solid white;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .box-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .box-content p {
+    color: #007185;
+  }
+  .foryou h2 {
+    margin-top: 30px;
+    height: 100px;
+  
+  }
+  
+  .box0 {
+    height: 280px;
+    width: 200px;
+    border: #707070 1px solid;
+    color: white;
+    padding: 10px;
+    background-color: #222f3d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* .box-img {
+    height: 280px;
+    background-image: url("http://images.amazon.com/images/P/0195153448.01");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  } */
+  
+  .bname {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .author-yr {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .author,
+  .yop {
+    font-size: 12px;
+  }
+  
+  /* footer */
+  
+  footer {
+    margin-top: 15px;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  .foot-panel1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+  }
+  
+  .footpanel3 {
+    background-color: #222f3d;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo1 {
+    background-image: url("/static/images/book_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    width: 100%;
+  }
+  
+  .footpanel4 {
+    background-color: #0f1111;
+    color: white;
+  
+    height: 80px;
+  
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  
+  .pages {
+    padding-top: 25px;
+  }
+  
+  .copyright {
+    padding-top: 5px;
+  }
+

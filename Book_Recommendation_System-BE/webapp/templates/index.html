@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+
+        
+        <div class="nav-search">
+            <select class="search-select">
+                <option> BookName</option>
+                <option> 🔒Author </option>
+            </select>
+            <form action="{% url 'secondpage' %}" method="get" class="search-form">
+              <div class="search-input-container">
+                <select id="books" name="book" class="search-input">
+                    {% if books %}
+                        {% for book in books %}
+                            <option value="{{ book }}">{{ book }}</option>
+                        {% endfor %}
+                    {% else %}
+                        <option>No books available</option>
+                    {% endif %}
+                </select>
+                <div class="search-icon">
+                    <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </div>
+            </form>
+        </div>
+            <div class="signin-signup">
+              <button class="log"></button>
+              <button class="reg"></button>
+        </div>
+       </div>  
+    <div>
+      <div class="panel">
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="panel-opt">
+            <a href="{% url 'genres' %}">Genres    </a>
+            <a href="{% url 'top_book' %}">Top ISBNs   </a>
+            <a href="{% url 'top_publisher' %}"> Top Publisher    </a>
+            <a href="{% url 'top_authors' %}">Popular Authors    </a>
+        </div>
+
+        <div class="panel-deals">
+            <p>Best Deals in Books</p>
+        </div>
+      </div>
+    </div>
+   </header>
+<div>
+   <div class="main-sec">
+    <div class="img2"></div>
+     <div class="cover-img"> </div>
+     
+</div>
+<div class="COLOR">
+<div class="foryou"> 
+  <h2>Top Recommendations</h2>
+</div>
+  <div class="book-sec">
+    <div class="box0 a1">
+      <div class="box-img a1"></div>
+      <div class="bname">A tale of Two Cities</div>
+      <div class="author-yr">
+        <span class="author">Charles Dickens</span>
+        <span>.</span>
+        <span class="yop">1985</span>
+      </div>
+    </div>
+    <div class="box0 a2">
+      <div class="box-img a2"></div>
+      <div class="bname">Harry Potter and the Philosopher's Stone</div>
+      <div class="author-yr">
+        <span class="author">J.K. Rowling</span>
+        <span>.</span>
+        <span class="yop">1999</span>
+      </div>
+    </div>
+    <div class="box0 a3">
+      <div class="box-img a3"></div>
+      <div class="bname">The Hobbit</div>
+      <div class="author-yr">
+        <span class="author">J. R. R. Tolkien</span>
+        <span>.</span>
+        <span class="yop">2002</span>
+      </div>
+    </div>
+    <div class="box0 a4">
+      <div class="box-img a4"></div>
+      <div class="bname">And Then there were none</div>
+      <div class="author-yr">
+        <span class="author">Agatha Cristie</span>
+        <span>.</span>
+        <span class="yop">1939</span>
+      </div>
+    </div>
+    <div class="box0 a5">
+      <div class="box-img a5"></div>
+      <div class="bname">The Da Vinci Code</div>
+      <div class="author-yr">
+        <span class="author">Dan Brown</span>
+        <span>.</span>
+        <span class="yop">2003</span>
+      </div>
+    </div>
+    <div class="box0 a6">
+      <div class="box-img a6"></div>
+      <div class="bname">Harry Potter and the Chamber of Secrets</div>
+      <div class="author-yr">
+        <span class="author">J.K. Rowling</span>
+        <span>.</span>
+        <span class="yop">1998</span>
+      </div>
+    </div>
+    <div class="box0 a7">
+      <div class="box-img a7"></div>
+      <div class="bname">The Alchemist</div>
+      <div class="author-yr">
+        <span class="author">Paulo Coelho</span>
+        <span>.</span>
+        <span class="yop">1988</span>
+      </div>
+    </div>
+    <div class="box0 a8">
+      <div class="box-img a8"></div>
+      <div class="bname">Harry Potter and the Prisoner of Azkaban</div>
+      <div class="author-yr">
+        <span class="author">J.K. Rowling</span>
+        <span>.</span>
+        <span class="yop">1999</span>
+      </div>
+    </div>
+    <div class="box0 a9">
+      <div class="box-img a9"></div>
+      <div class="bname">One Hundred Years of Soltitude</div>
+      <div class="author-yr">
+        <span class="author">Gabriel G. Marquez</span>
+        <span>.</span>
+        <span class="yop">1967</span>
+      </div>
+    </div>
+    <div class="box0 a10">
+      <div class="box-img a10"></div>
+      <div class="bname">To kill a Mockingbird</div>
+      <div class="author-yr">
+        <span class="author">Harper Lee</span>
+        <span>.</span>
+        <span class="yop">1960</span>
+      </div>
+    </div>
+    <div class="box0 a11">
+      <div class="box-img a11"></div>
+      <div class="bname">War and Peace</div>
+      <div class="author-yr">
+        <span class="author">Leo Tolstoy</span>
+        <span>.</span>
+        <span class="yop">1869</span>
+      </div>
+    </div>
+    <div class="box0 a12">
+      <div class="box-img a12"></div>
+      <div class="bname">The Diary of Anne Frank</div>
+      <div class="author-yr">
+        <span class="author">Anne Frank</span>
+        <span>.</span>
+        <span class="yop">1947</span>
+      </div>
+    </div>
+    <!-- <div class="box0 a13">
+      <div class="box-img"></div>
+      <div class="bname">Classical Mythology</div>
+      <div class="author-yr">
+        <span class="author">Mark P. O. Morford</span>
+        <span>.</span>
+        <span class="yop">2002</span>
+      </div>
+    </div>
+    <div class="box0 a14">
+      <div class="box-img"></div>
+      <div class="bname">Classical Mythology</div>
+      <div class="author-yr">
+        <span class="author">Mark P. O. Morford</span>
+        <span>.</span>
+        <span class="yop">2002</span>
+      </div>
+    </div>
+    <div class="box0 a15">
+      <div class="box-img"></div>
+      <div class="bname">Classical Mythology</div>
+      <div class="author-yr">
+        <span class="author">Mark P. O. Morford</span>
+        <span>.</span>
+        <span class="yop">2002</span>
+      </div>
+    </div>
+    <div class="box0 a16">
+      <div class="box-img"></div>
+      <div class="bname">Classical Mythology</div>
+      <div class="author-yr">
+        <span class="author">Mark P. O. Morford</span>
+        <span>.</span>
+        <span class="yop">2002</span>
+      </div>
+    </div>
+    <div class="box0 a17">
+      <div class="box-img"></div>
+      <div class="bname">Classical Mythology</div>
+      <div class="author-yr">
+        <span class="author">Mark P. O. Morford</span>
+        <span>.</span>
+        <span class="yop">2002</span>
+      </div>
+    </div>
+    <div class="box0 a18">
+      <div class="box-img"></div>
+      <div class="bname">Classical Mythology</div>
+      <div class="author-yr">
+        <span class="author">Mark P. O. Morford</span>
+        <span>.</span>
+        <span class="yop">2002</span>
+      </div>
+    </div> -->
+    </div>
+  </div>
+    <footer> 
+      <div class="foot-panel1"><a href="#">Back to top</a></div>
+
+      <div class="footpanel3">
+          <div class="logo1"></div>
+      </div>
+
+      <div class="footpanel4">
+          <div class="pages">
+              <a>Conditions of Use</a>
+              <a>Privacy Notice</a>
+              <a>Your Ads privacy choices</a>
+          </div>
+          <div class="copyright">
+              © 2024, Book Recommendation Model, BCT077, LEC
+          </div>
+      </div>
+  </footer>
+    
+
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+</body>
+</html>
